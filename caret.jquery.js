@@ -1,6 +1,6 @@
 (function ($) {
     $.fn.caret = function (position) {
-        var caret = caretFactory(this[0]);
+        var caret = getCaret(this[0]);
         if (position) {
             caret.setPosition(position);
         } else {
@@ -11,7 +11,7 @@
     /**
      * Caret factory.
      */
-    function caretFactory(element) {
+    function getCaret(element) {
         this._index = this._index || [];
         this._store = this._store || [];
 
@@ -22,7 +22,7 @@
         }
 
         return this._store[index];
-    };
+    }
 
     /**
      * @typedef {Object} DetailedPosition
@@ -36,7 +36,7 @@
     function Caret(element) {
         this._element = element;
         this._isContentEditableElement = element.contentEditable === 'true';
-    };
+    }
 
     /**
      * Get caret position in element.
@@ -66,9 +66,9 @@
             position = this._element.textContent.length + position;
         }
 
-        if (this._isContentEditableElement) {
-            this._element.focus();
+        this._element.focus();
 
+        if (this._isContentEditableElement) {
             var detailedPosition = findDetailedPosition(this._element, position);
             if (detailedPosition) {
                 window.getSelection().collapse(detailedPosition.node, detailedPosition.position);
