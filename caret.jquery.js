@@ -3,6 +3,7 @@
         var caret = getCaret(this[0]);
         if (position) {
             caret.setPosition(position);
+            return this;
         } else {
             return caret.getPosition();
         }

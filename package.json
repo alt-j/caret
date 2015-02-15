@@ -1,7 +1,7 @@
 {
   "author": "Morozov Andrey <alt-j@yandex-team.ru>",
   "name": "caret",
-  "description": "HTML5 JQuery plugin for manipulate caret position in inputs, textareas or content editables divs",
+  "description": "HTML5 JQuery plugin for manipulate caret position in inputs, textareas or content editables elements",
   "version": "0.0.1",
   "main": "caret.jquery.js",
   "homepage": "https://github.com/alt-j/caret",
