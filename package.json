@@ -15,12 +15,14 @@
     "url": "https://github.com/alt-j/caret.git"
   },
   "devDependencies": {
+    "jscs": "1.8.1",
     "jshint": "2.1.x",
-    "jscs": "1.8.1"
+    "pre-commit": "1.0.4"
   },
   "scripts": {
     "lint": "npm run-script jscs && npm run-script jshint",
     "jscs": "./node_modules/jscs/bin/jscs caret.jquery.js",
     "jshint": "./node_modules/.bin/jshint caret.jquery.js"
-  }
+  },
+  "pre-commit": ["lint"]
 }
