@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Jquery.caret : JQuery plugin for manipulate caret position in inputs, textareas or content editables elements">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jquery.caret</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/alt-j/jquery.caret">View on GitHub</a>
+
+          <h1 id="project_title">Jquery.caret</h1>
+          <h2 id="project_tagline">JQuery plugin for manipulate caret position in inputs, textareas or content editables elements</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/alt-j/jquery.caret/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/alt-j/jquery.caret/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="caret-manipulation-plugin" class="anchor" href="#caret-manipulation-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Caret Manipulation Plugin</h3>
+
+<p>JQuery.Caret is JQuery plugin, which provide usefull interface to mainpulate caret position in any inputs, textareas or content ediatables elements.</p>
+
+<p>Get position of caret:</p>
+
+<div class="highlight highlight-js"><pre><span class="pl-s">var</span> element <span class="pl-k">=</span> $(<span class="pl-s1"><span class="pl-pds">'</span>div[contenteditable]<span class="pl-pds">'</span></span>);
+<span class="pl-c">// Return current caret position.</span>
+element.caret();</pre></div>
+
+<p>Set position of caret:</p>
+
+<div class="highlight highlight-js"><pre><span class="pl-s">var</span> element <span class="pl-k">=</span> $(<span class="pl-s1"><span class="pl-pds">'</span>div[contenteditable]<span class="pl-pds">'</span></span>);
+element.caret(<span class="pl-c1">2</span>);
+<span class="pl-c">// If negative, it is treated as sourceLength + position</span>
+<span class="pl-c">// where sourceLength is the length of the string.</span>
+element.caret(<span class="pl-k">-</span><span class="pl-c1">1</span>);</pre></div>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Jquery.Caret? Contact <a href="mailto:alt-j@yandex-team.ru">alt-j@yandex-team.ru</a> and we’ll help you sort it out.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jquery.caret maintained by <a href="https://github.com/alt-j">alt-j</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
